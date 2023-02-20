@@ -32,7 +32,7 @@ then
   cp /aria2/conf/文件过滤.conf /config/文件过滤.conf
 fi
 
-cp /aria2/script/ config/script/
+cp /aria2/script/. config/script/
 
 if [[ ! -e /config/aria2.session ]]
 then
