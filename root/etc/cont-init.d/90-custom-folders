@@ -1,4 +1,8 @@
 #!/usr/bin/with-contenv bash
 
-echo "Install python3 ..."
-apk add --update --no-cache python3
+add_package() {  
+  echo "Install python3 ..."
+  apk add --update --no-cache python3
+}
+
+add_package 2>&1 | sed "s#^#cont-init: info: $(realpath $0): \1#g"
