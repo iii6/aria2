@@ -39,8 +39,8 @@ jobs:
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: true
           tags: |
-            superng6/aria2:stable-${{ steps.set-version.outputs.version }}
-            superng6/aria2:latest
+            iii6/aria2:stable-${{ steps.set-version.outputs.version }}
+            iii6/aria2:latest
 
       - name: Build dockerfile webui
         if: steps.set-version.outputs.status == 'success'
@@ -50,6 +50,6 @@ jobs:
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: true
           tags: |
-            superng6/aria2:webui-stable-${{ steps.set-version.outputs.version }}
-            superng6/aria2:webui-latest  
+            iii6/aria2:webui-stable-${{ steps.set-version.outputs.version }}
+            iii6/aria2:webui-latest  
 
