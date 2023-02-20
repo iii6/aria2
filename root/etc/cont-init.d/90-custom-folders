@@ -1,1 +1,4 @@
 #!/usr/bin/with-contenv bash
+
+echo "Install python3 ..."
+apk add --update --no-cache python3
