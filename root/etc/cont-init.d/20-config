@@ -5,6 +5,7 @@ mkdir -p \
 	/config/ssl \
   /config/logs \
   /config/backup-torrent \
+  /config/script \
   /downloads/completed \
   /downloads/recycle
 
@@ -30,6 +31,8 @@ if [[ ! -e /config/文件过滤.conf ]]
 then
   cp /aria2/conf/文件过滤.conf /config/文件过滤.conf
 fi
+
+cp /aria2/script/ config/script/
 
 if [[ ! -e /config/aria2.session ]]
 then
