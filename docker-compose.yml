@@ -1,7 +1,7 @@
 version: "3.1"
 services:
   aria2:
-    image: superng6/aria2:webui-latest
+    image: iii6/aria2:webui-latest
     container_name: aria2
     network_mode: host
     environment:
